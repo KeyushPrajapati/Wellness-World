@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------- category section -------------------------------------------------------- */
+.cate-section{
+    margin-top: 150px;
+    
+}
+.category{
+    display: flex;
+    justify-content: center ;
+    /* margin-top: 100px; */
+}
+.cate-title{
+    margin: 0px 0px 30px 0px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center  ;
+}
+.container-y{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+.cate-cards{
+ padding: 10px;
+}
+.cate-img{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.cate-img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 5px #41AEA9;
+    transition: 0.3s;
+    
+}
+.cate-cards > a{
+ 
+    overflow: hidden;
+    text-decoration: none;
+    
+}
+
+@media  screen and (max-width:991px) {
+     .cate-img{
+            height: 150px; 
+    }
+}
+@media  screen and (max-width:766px) {
+        .container-y{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.5fr 0.5fr;
+    }
+   .cate-img{   
+        height: 180px;   
+    }
+}
+@media  screen and (max-width:555px) {
+    .cate-img{ 
+        height: 120px;  
+    }
+}
+
+
+
+
+
+/* ----------------------- lab-test is here--------------------------------------------------------- */
+.lab-test{
+    background-color: #b1f7f270;
+    padding: 40px 0px;
+    margin-top: 70px;
+}
+.lab-title{
+    /* border: 1px solid red; */
+    margin: 0px 90px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    border-bottom: 1px solid #4fd3cd;
+}
+.container-x{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0px 60px;
+}
+.cards{
+    /* border: 2px solid rgb(211, 242, 8); */
+    width: 100%;
+    height: 300px;
+    display:flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.card-title{
+    font-weight: bold;
+    color: #213E3B;
+    padding: 20px 0px;
+    font-family: 'Raleway';
+}
+.text-box{
+    /* border: 2px solid rgb(8, 70, 242); */
+    color: #2b504c;
+    padding: 10px 35px 10px 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lab-icon{
+    /* border: 2px solid green; */
+    padding: 10px 35px;
+    margin-top: 30px;
+}
+
+/* ------------------------ media query --------------------------- */
+
+/*-------------------------------------- 991 px screen max width */
+
+@media screen and (max-width:991px) {
+    .container-x{
+        padding: 0px 50px;
+    }
+    .text-box{
+        /* border: 2px solid rgb(8, 70, 242); */
+        padding: 10px 25px 10px 25px;
+        font-size: 14px;
+    }
+   
+    .card-title{
+        font-weight: bold;
+        padding: 10px 0px;
+    }
+    .lab-icon{
+        
+        padding: 10px 25px;
+        margin-top: 30px;
+    }
+}
+
+/*-------------------------------------- 772 px screen max width */
+@media screen and (max-width:772px) {
+    .container-x{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .text-box{
+       
+        padding: 10px 25px 10px 25px;
+        
+    }
+    .cards{
+        height: 250px;
+        
+    }
+.c1{border-right: 1px solid rgba(195, 206, 203, 0.692);
+    border-bottom: 1px solid rgba(195, 206, 203, 0.692);}
+
+.c2{border-left: 1px solid rgba(195, 206, 203, 0.692);
+    border-bottom: 1px solid rgba(195, 206, 203, 0.692);}
+
+.c3{border-top: 1px solid rgba(195, 206, 203, 0.692);
+    border-right: 1px solid rgba(195, 206, 203, 0.692);}
+
+.c4{border-top: 1px solid rgba(195, 206, 203, 0.692);
+    border-left: 1px solid rgba(195, 206, 203, 0.692);}
+
+    .lab-icon{
+       
+        padding: 5px 35px;
+        margin-top: 20px;
+    }
+  
+}
+
+/*-------------------------------------- 497 px screen max width */
+@media screen and (max-width:497px){
+    .lab-title{
+        margin: 0px 60px;
+    }
+    .container-x{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .c1{border-right: none;
+        border-bottom: 1px solid rgba(195, 206, 203, 0.692);}
+    
+    .c2{border-left: none;
+        border-bottom: 1px solid rgba(195, 206, 203, 0.692);}
+    
+    .c3{border-top: none;
+        border-right: none;
+    border-bottom:1px solid rgba(195, 206, 203, 0.692); ;}
+    
+    .c4{border-top: none;
+        border-left:none;}
+    
+}

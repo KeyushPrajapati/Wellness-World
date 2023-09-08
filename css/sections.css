@@ -1,0 +1,45 @@
+/* fake sections */
+/* lab-test section is here*/
+.lab-test{
+    
+    /* border: 1px solid red; */
+    background-color: rgb(231, 252, 248);
+    padding: 0px 50px;
+    
+}
+.container-x{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid rgb(0, 0, 0); */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards{
+    /* border: 2px solid rgb(211, 242, 8); */
+    width: 25%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-title{
+    font-weight: bold;
+    padding: 20px 0px;
+}
+.text-box{
+    /* border: 2px solid rgb(8, 70, 242); */
+    padding: 10px 35px 10px 35px;
+    
+}
+.lab-icon{
+    /* border: 2px solid green; */
+    padding: 10px 35px;
+    margin-top: 30px;
+}
+.lab-icon > img{
+    width: 20%;
+    
+}
+
+
