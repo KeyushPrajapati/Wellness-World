@@ -1,2 +1,5 @@
 # Wellness-World
-This project made by HTML and only CSS
+This is basic project made by HTML and only CSS
+
+Go Live :  https://keyushprajapati.github.io/Wellness-World/
+
